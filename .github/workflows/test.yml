@@ -1,0 +1,10 @@
+name: test
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        uses: trufflesecurity/trufflehog@main
+      - name: Step 2
+        uses: actions/download-artifact@v8.0.1
